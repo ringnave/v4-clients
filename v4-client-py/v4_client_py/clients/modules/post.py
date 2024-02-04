@@ -43,7 +43,15 @@ class Post:
         '''
 
         wallet = subaccount.wallet
-        network = NetworkConfig.fetch_dydx_testnet()
+        # network = NetworkConfig.fetch_dydx_testnet() #bug to get testnet network config
+        network = NetworkConfig(
+            chain_id=self.config.chain_id,
+            url=self.config.grpc_endpoint,
+            fee_minimum_gas_price=0,
+            fee_denomination="adydx",
+            staking_denomination="adydx",
+            faucet_url=None,
+        )
         ledger = LedgerClient(network)
         tx = Transaction()
         tx.add_message(msg)
