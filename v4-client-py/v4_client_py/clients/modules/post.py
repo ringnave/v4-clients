@@ -46,7 +46,7 @@ class Post:
         # network = NetworkConfig.fetch_dydx_testnet() #bug to get testnet network config
         network = NetworkConfig(
             chain_id=self.config.chain_id,
-            url=self.config.grpc_endpoint,
+            url="grpc+https://" + self.config.grpc_endpoint,
             fee_minimum_gas_price=0,
             fee_denomination="adydx",
             staking_denomination="adydx",
