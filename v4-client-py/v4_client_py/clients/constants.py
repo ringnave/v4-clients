@@ -3,7 +3,7 @@ from ..chain.aerial.config import NetworkConfig
 
 
 # ------------ API URLs ------------
-INDEXER_API_HOST_MAINNET = 'https://indexer.dydx.trade/v4'
+INDEXER_API_HOST_MAINNET = 'https://indexer.dydx.trade'
 INDEXER_API_HOST_TESTNET = 'https://indexer.v4testnet.dydx.exchange'
 
 INDEXER_WS_HOST_MAINNET = 'wss://indexer.dydx.trade/v4/ws'
