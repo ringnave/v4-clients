@@ -3,22 +3,22 @@ from ..chain.aerial.config import NetworkConfig
 
 
 # ------------ API URLs ------------
-INDEXER_API_HOST_MAINNET = None
+INDEXER_API_HOST_MAINNET = 'https://indexer.dydx.trade/v4'
 INDEXER_API_HOST_TESTNET = 'https://indexer.v4testnet.dydx.exchange'
 
-INDEXER_WS_HOST_MAINNET = None
+INDEXER_WS_HOST_MAINNET = 'wss://indexer.dydx.trade/v4/ws'
 INDEXER_WS_HOST_TESTNET = 'wss://indexer.v4testnet.dydx.exchange/v4/ws'
 
 FAUCET_API_HOST_TESTNET = 'https://faucet.v4testnet.dydx.exchange'
 
-VALIDATOR_API_HOST_MAINNET = None
+VALIDATOR_API_HOST_MAINNET = 'https://dydx-ops-rest.kingnodes.com:443'
 VALIDATOR_API_HOST_TESTNET = 'https://test-dydx.kingnodes.com'
 
-VALIDATOR_GRPC_MAINNET = None
+VALIDATOR_GRPC_MAINNET = 'dydx-ops-grpc.kingnodes.com:443'
 VALIDATOR_GRPC_TESTNET = 'test-dydx-grpc.kingnodes.com:443'
 
 # ------------ Ethereum Network IDs ------------
-NETWORK_ID_MAINNET = None
+NETWORK_ID_MAINNET = 'dydx-mainnet-1'
 NETWORK_ID_TESTNET = 'dydx-testnet-4'
 
 # ------------ Market Statistic Day Types ------------
